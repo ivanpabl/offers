@@ -1,0 +1,19 @@
+[project]
+name = "offrers-hh"
+version = "0.1.0"
+description = "Автоматический поиск и отклик на вакансии hh.ru"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx",
+    "pydantic",
+    "pyyaml",
+    "rich",
+    "click",
+    "playwright",
+]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[project.scripts]
+offrers = "src.main:cli"

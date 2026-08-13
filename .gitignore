@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Конфигурация и данные
+config.yaml
+data.db
+
+# Браузерный профиль (сессии, куки)
+browser_data/
+
+# Отладка
+debug_screenshots/
+
+# ОС
+.DS_Store
+Thumbs.db

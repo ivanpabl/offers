@@ -1,0 +1,48 @@
+search:
+  text: "middle ml"
+  area: []
+  salary_from: null
+  employment: null
+  schedule: null
+  experience: null
+  remote: true
+  auto_queries: true
+  max_queries: 5
+  max_pages: 10
+  max_rounds: 20
+  round_delay_seconds:
+    min: 60
+    max: 180
+
+apply:
+  message: "Здравствуйте! Интересует данная вакансия."
+  cover_letter: "Здравствуйте! Интересует данная вакансия. Имею релевантный опыт работы, готов обсудить детали на собеседовании."
+  resume_text: |
+    Здесь укажите текст вашего резюме.
+    Он используется для генерации поисковых запросов,
+    матчинга вакансий и сопроводительных писем.
+  max_per_day: 50
+  batch_size: 10
+  delay_seconds:
+    min: 2
+    max: 5
+
+deepseek:
+  api_key: "ВАШ_API_КЛЮЧ"
+  model: "deepseek-chat"
+  base_url: "https://api.deepseek.com"
+  enabled: false
+  language: "ru"
+  max_tokens: 1000
+  temperature: 0.7
+
+match:
+  enabled: true
+  model_url: "http://localhost:11434"
+  model: "qwen2.5:7b"
+  threshold: 70
+  max_chars: 2500
+  workers: 1
+  backlog: 10
+  max_retries: 2
+  timeout: 60
